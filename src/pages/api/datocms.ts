@@ -1,4 +1,4 @@
-import { TypeProps } from "@/interfaces/Home";
+import { InfoProps, TypeProps } from "@/interfaces/Home";
 
 const API_URL = 'https://graphql.datocms.com/';
 const API_TOKEN = process.env.DATOCMS_READ_ONLY_API_TOKEN;
@@ -52,6 +52,20 @@ export async function getAllTypes(): Promise<TypeProps[]> {
   return data.allTypes;
 }
 
-const exportObject = {getAllTypes}
+export async function getAllInfos(): Promise<InfoProps[]> {
+  const data = await performRequest(`
+		{
+			allInfos {
+				id
+				title
+				topics
+			}
+		}
+  `);
+
+  return data.allInfos;
+}
+
+const exportObject = {getAllTypes, getAllInfos}
 
 export default exportObject

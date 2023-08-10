@@ -11,3 +11,14 @@ export interface TypeProps {
   coverImage: ImagesProps;
   images: ImagesProps[];
 }
+
+export interface TopicProps {
+  topic: string;
+  description: string;
+}
+
+export interface InfoProps {
+  id: string;
+  title: string;
+  topics: TopicProps[];
+}

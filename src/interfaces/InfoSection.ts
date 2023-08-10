@@ -1,6 +1,11 @@
+import { InfoProps } from "./Home";
+
+export interface InfoSectionProps {
+	allInfos: InfoProps[];
+}
+
 export interface InfoContainerProps {
-	textHeader: string;
-	children: React.ReactNode
+	info: InfoProps
 }
 
 export interface InfoTopicProps {

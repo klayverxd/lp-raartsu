@@ -1,56 +1,52 @@
 import React from "react";
 
-import { InfoContainerProps, InfoTopicProps } from "@/interfaces/InfoSection";
+import { InfoContainerProps, InfoSectionProps, InfoTopicProps } from "@/interfaces/InfoSection";
 
 import styles from "./styles.module.css";
+import { InfoProps, TopicProps } from "@/interfaces/Home";
 
-const InfoContainer = ({ textHeader, children }: InfoContainerProps) => {
+const InfoContainer = ({ info }: InfoContainerProps) => {
 	return (
 		<div className={styles.containerInfo}>
-			<h2 className={styles.infoHeaderText}>{textHeader}</h2>
-			{children}
+			<h2 className={styles.infoHeaderText}>{info.title}</h2>
+			{info.topics.map((topic: TopicProps) => (
+				<InfoTopic
+					key={topic.topic}
+					topic={topic.topic}
+					description={topic.description}
+				/>
+			))}
 		</div>
 	)
 }
 
 const InfoTopic = ({ topic, description }: InfoTopicProps) => {
+	const descriptionLines = description.split('\n');
+
 	return (
 		<div className={styles.contentInfo}>
 			<h3 className={styles.infoTopicText}>{topic}</h3>
-			<h4 className={styles.infoDescriptionText}>{description}</h4>
+			{descriptionLines.map((line: string, index: number) => (
+				<h4 key={index} className={styles.infoDescriptionText}>{line}</h4>
+			))}
 		</div>
 	)
 }
 
 const DottedDivider = () => <hr className={styles.hr} />
 
-function InfosSection() {
+function InfosSection({ allInfos }: InfoSectionProps) {
 	return (
 		<div className={styles.containerInfos}>
 			<h1>Informações adicionais</h1>
 
 			<div className={styles.contentInfos}>
-				<InfoContainer textHeader="Sobre o processo">
-					<InfoTopic
-						topic='Como encomenda?'
-						description='Mande uma mensagem para meu e-mail ou para minha DM no Instagram.'
-					/>
-					<InfoTopic
-						topic='Como funciona?'
-						description='Você irá me informar como deseja o desenho: referências, cores, pose.'
-					/>
-				</InfoContainer>
-				<DottedDivider />
-				<InfoContainer textHeader="Sobre a arte">
-					<InfoTopic
-						topic='Faço:'
-						description='Oc&lsquo;s'
-					/>
-					<InfoTopic
-						topic='Como funciona?'
-						description='Você irá me informar como deseja o desenho: referências, cores, pose.'
-					/>
-				</InfoContainer>
+				{allInfos.map((info: InfoProps) => (
+					<>
+						<InfoContainer info={info} />
+						<DottedDivider />
+					</>
+				))}
 			</div>
 		</div>
 	);
