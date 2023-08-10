@@ -1,0 +1,40 @@
+.headerContainer {
+	background-color: var(--mid-blue);
+
+	width: 90%;
+	padding: 10px 50px;
+
+	border-radius: var(--mid-radius);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.authorSection {
+	display: flex;
+	align-items: center;
+}
+
+.logoImage {
+	border-radius: var(--rounded);
+
+	margin-right: 14px;
+
+	width: 60px;
+	height: 60px;
+}
+
+.socialMediaIcon {
+	width: 45px;
+	height: 45px;
+}
+
+.socialMediaIcon:hover {
+	transform: scale(1.15);
+	transition: 0.1s ease;
+}
+
+.socialMediaLink:not(:last-child) {
+	margin-right: 40px;
+}

@@ -1,0 +1,46 @@
+.container {
+	align-items: center;
+
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	padding: 2rem 0;
+}
+
+.containerCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.containerCard {
+	display: flex;
+	flex-direction: column;
+
+	margin: 15px 20px;
+}
+
+.cardImage {
+	border-radius: var(--border-radius);
+	width: 300px;
+	height: 300px;
+
+	margin-bottom: 10px;
+}
+
+.cardButton {
+	background-color: lightblue;
+	border-radius: var(--border-radius);
+
+	height: 50px;
+
+	border: none;
+	color: white;
+}
+
+.cardButton:hover {
+	cursor: pointer;
+}

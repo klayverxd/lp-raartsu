@@ -1,0 +1,48 @@
+.containerSky {
+	align-items: center;
+
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	padding: 2rem 0;
+}
+
+.leftSection {
+	align-items: center;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 50%;
+}
+
+.cloudImage {
+	max-width: 100%;
+	width: 600px;
+	height: auto;
+}
+
+.rightSection {
+	align-items: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 50%;
+	height: 100%;
+}
+
+.sunImage {
+	max-width: 100%;
+	width: 600px;
+	height: auto;
+}
+
+.skyText {
+	color: var(--text-black);
+	/* font: var(--font-inter); */
+	text-align: center;
+}
