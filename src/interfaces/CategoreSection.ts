@@ -1,10 +1,10 @@
-import { AllTypesProps } from "./Home";
+import { TypeProps } from "./Home";
 
 
 export interface CategoriesSectionProps {
-	allTypes: AllTypesProps[]; 
+	allTypes: TypeProps[]; 
 }
 
 export interface CardProps {
-	type: AllTypesProps; 
+	type: TypeProps; 
 }

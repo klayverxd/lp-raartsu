@@ -4,7 +4,7 @@ export interface ImagesProps {
   alt: string;
 }
 
-export interface AllTypesProps {
+export interface TypeProps {
   id: string;
   name: string;
   price: string;

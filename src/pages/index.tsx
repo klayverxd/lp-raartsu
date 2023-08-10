@@ -9,7 +9,7 @@ import CategoriesSection from '@/components/CategoriesSection';
 import IndividualSectionScroll from '@/components/IndividualSectionScroll';
 import InfosSection from '@/components/InfosSection';
 
-import { AllTypesProps } from '@/interfaces/Home';
+import { TypeProps } from '@/interfaces/Home';
 
 export default function Home({
   allTypes,
@@ -20,7 +20,7 @@ export default function Home({
       <Sky />
       <CategoriesSection allTypes={allTypes} />
 
-      {allTypes.map((type) => (
+      {allTypes.map((type: TypeProps) => (
         <IndividualSectionScroll key={type.id} type={type} />
       ))}
 
@@ -30,7 +30,7 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps<{
-  allTypes: AllTypesProps[]
+  allTypes: TypeProps[]
 }> = async () => {
   const allTypes = await getAllTypes();
 

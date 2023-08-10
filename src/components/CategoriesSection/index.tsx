@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { CardProps, CategoriesSectionProps } from "@/interfaces/CategoreSection";
 
 import styles from "./styles.module.css";
+import { TypeProps } from "@/interfaces/Home";
 
 const Card = ({ type }: CardProps) => {
 	const handleScrollClick = () => {
@@ -36,7 +37,7 @@ function CategoriesSection({ allTypes }: CategoriesSectionProps) {
 			<h2>Me apoie encomendando uma arte abaixo:</h2>
 
 			<div className={styles.containerCards}>
-				{allTypes.map((type) => (
+				{allTypes.map((type: TypeProps) => (
 					<Card key={type.id} type={type} />
 				))}
 			</div>

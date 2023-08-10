@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from "./styles.module.css";
 
 import { IndividualSectionScrollProps } from "@/interfaces/IndividualSectionScrollProps";
+import { ImagesProps } from "@/interfaces/Home";
 
 function IndividualSectionScroll({ type }: IndividualSectionScrollProps) {
 
@@ -14,7 +15,7 @@ function IndividualSectionScroll({ type }: IndividualSectionScrollProps) {
 			<div
 				className={styles.containerImagesSlider}
 			>
-				{type.images.map((image) =>
+				{type.images.map((image: ImagesProps) =>
 					<div key={image.id} className={styles.containerImageSlider}>
 						<Image
 							className={styles.imageSlider}
