@@ -35,8 +35,8 @@
 }
 
 .containerImageSlider {
-	width: 16em;
-	height: 16em;
+	min-width: 16em;
+	min-height: 16em;
 	position: relative;
 	margin-right: 4em;
 }
