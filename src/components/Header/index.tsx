@@ -37,7 +37,7 @@ function Header() {
 
 					/>
 				</a>
-				<a href="https://www.instagram.com/raartsu/"
+				<a href="https://www.tiktok.com/@raartsu"
 					className={styles.socialMediaLink}
 					target="_blank">
 					<Image
@@ -47,7 +47,7 @@ function Header() {
 
 					/>
 				</a>
-				<a href="https://www.instagram.com/raartsu/"
+				<a href="mailto:raquel0x0@gmail.com"
 					className={styles.socialMediaLink}
 					target="_blank">
 					<Image
