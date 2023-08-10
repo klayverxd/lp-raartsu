@@ -1,4 +1,4 @@
-import { AllTypesProps } from "./home";
+import { AllTypesProps } from "./Home";
 
 
 export interface IndividualSectionScrollProps {
