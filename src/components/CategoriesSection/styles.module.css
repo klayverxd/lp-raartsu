@@ -23,6 +23,17 @@
 	margin: 15px 20px;
 }
 
+.containerImageCard {
+	display: flex;
+	flex-direction: column;
+
+	width: 14em;
+	height: 14em;
+	position: relative;
+
+	margin: 15px 0;
+}
+
 .cardImage {
 	border-radius: var(--border-radius);
 	width: 300px;

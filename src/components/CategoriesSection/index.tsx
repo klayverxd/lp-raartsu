@@ -17,13 +17,14 @@ const Card = ({ type }: CardProps) => {
 
 	return (
 		<div className={styles.containerCard}>
-			<Image
-				src={type.coverImage.url}
-				width={50}
-				height={50}
-				alt={type.coverImage.alt || 'imagem'}
-				className={styles.cardImage}
-			/>
+			<div className={styles.containerImageCard}>
+				<Image
+					src={type.coverImage.url}
+					alt={type.coverImage.alt || 'imagem'}
+					className={styles.cardImage}
+					layout="fill"
+				/>
+			</div>
 			<button type="button" className={styles.cardButton} onClick={handleScrollClick}>
 				<h2>{type.name}</h2>
 			</button>
