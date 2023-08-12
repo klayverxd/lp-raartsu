@@ -8,6 +8,7 @@ import Sky from '@/components/Sky';
 import CategoriesSection from '@/components/CategoriesSection';
 import IndividualSectionScroll from '@/components/IndividualSectionScroll';
 import InfosSection from '@/components/InfosSection';
+import Footer from '@/components/Footer';
 
 import { InfoProps, TypeProps } from '@/interfaces/Home';
 
@@ -26,6 +27,8 @@ export default function Home({
       ))}
 
       <InfosSection allInfos={allInfos} />
+
+      <Footer />
     </div>
   )
 }
