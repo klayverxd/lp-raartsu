@@ -5,6 +5,7 @@
 
 	display: flex;
 	justify-content: space-between;
+	gap: 2em;
 
 	padding: 2rem 0;
 }
@@ -43,6 +44,18 @@
 
 .skyText {
 	color: var(--text-black);
-	/* font: var(--font-inter); */
 	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.containerSky {
+		flex-direction: column-reverse;
+
+		gap: 0;
+	}
+
+	.leftSection,
+	.rightSection {
+		width: 70%;
+	}
 }

@@ -1,10 +1,12 @@
 .container {
+	color: var(--text-black);
+
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 
-	width: 100%;
+	width: 100vw;
 	max-width: 1500px;
-	padding: 1rem 0;
+	padding: 1rem 2rem;
 }

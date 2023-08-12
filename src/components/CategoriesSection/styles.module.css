@@ -49,7 +49,7 @@
 	height: 50px;
 
 	border: none;
-	color: white;
+	color: var(--text-white);
 }
 
 .cardButton:hover {

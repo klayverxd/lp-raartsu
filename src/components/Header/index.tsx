@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from 'next/image'
 
 import logo from '../../../public/images/logo.png'
@@ -9,6 +9,70 @@ import tiktok_icon from '../../../public/images/social-medias/tiktok_icon.svg'
 import mail_icon from '../../../public/images/social-medias/mail_icon.svg'
 
 import styles from "./styles.module.css";
+
+function Modal() {
+	const [isModalOpen, setModalOpen] = useState(false);
+
+	const toggleModal = () => {
+		setModalOpen(!isModalOpen);
+	};
+
+	return (
+		<>
+			<button onClick={toggleModal} className={styles.buttonModal}>
+				☰
+			</button>
+
+			{isModalOpen && <div className={styles.conainerModal}>
+				<div className={styles.contentModal}>
+					<nav className={styles.navSocialMediaModal}>
+						<a href="https://www.instagram.com/raartsu/"
+							className={styles.socialMediaLink}
+							target="_blank">
+							<h3>
+								Instagram
+							</h3>
+							<Image
+								src={insta_icon}
+								alt="insta icon"
+								className={styles.socialMediaIcon}
+
+							/>
+						</a>
+						<a href="https://www.tiktok.com/@raartsu"
+							className={styles.socialMediaLink}
+							target="_blank">
+							<h3>
+								Tiktok
+							</h3>
+							<Image
+								src={tiktok_icon}
+								alt="tiktok icon"
+								className={styles.socialMediaIcon}
+
+							/>
+						</a>
+						<a href="mailto:raquel0x0@gmail.com"
+							className={styles.socialMediaLink}
+							target="_blank">
+							<h3>
+								E-mail
+							</h3>
+							<Image
+								src={mail_icon}
+								alt="mail icon"
+								className={styles.socialMediaIcon}
+
+							/>
+						</a>
+					</nav>
+
+					<button className={styles.buttonModal} onClick={toggleModal}>&#215;</button>
+				</div>
+			</div>}
+		</>
+	)
+}
 
 function Header() {
 	return (
@@ -26,7 +90,8 @@ function Header() {
 				/>
 			</div>
 
-			<nav>
+			<Modal />
+			<nav className={styles.navSocialMedia}>
 				<a href="https://www.instagram.com/raartsu/"
 					className={styles.socialMediaLink}
 					target="_blank">
