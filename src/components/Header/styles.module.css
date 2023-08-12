@@ -2,13 +2,15 @@
 	background-color: var(--mid-blue);
 
 	width: 90%;
-	padding: 10px 2rem;
+	max-width: 1500px;
 
 	border-radius: var(--mid-radius);
 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	padding: 10px 2rem;
 }
 
 .authorSection {

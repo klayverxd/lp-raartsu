@@ -2,12 +2,13 @@
 	align-items: center;
 
 	width: 100%;
+	max-width: 1500px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
-	padding: 2rem 0;
+	padding: 2rem 2rem;
 }
 
 .containerCards {
