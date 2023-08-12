@@ -41,6 +41,7 @@
 
 .buttonModal {
 	background: none;
+	color: var(--text-white);
 
 	display: none !important;
 
@@ -108,6 +109,10 @@
 	.socialMediaIcon {
 		width: 2rem;
 	}
+}
+
+.navTextModal {
+	color: var(--text-white);
 }
 
 .navSocialMediaModal {

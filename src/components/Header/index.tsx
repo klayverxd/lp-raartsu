@@ -29,7 +29,7 @@ function Modal() {
 						<a href="https://www.instagram.com/raartsu/"
 							className={styles.socialMediaLink}
 							target="_blank">
-							<h3>
+							<h3 className={styles.navTextModal}>
 								Instagram
 							</h3>
 							<Image
@@ -42,7 +42,7 @@ function Modal() {
 						<a href="https://www.tiktok.com/@raartsu"
 							className={styles.socialMediaLink}
 							target="_blank">
-							<h3>
+							<h3 className={styles.navTextModal}>
 								Tiktok
 							</h3>
 							<Image
@@ -55,7 +55,7 @@ function Modal() {
 						<a href="mailto:raquel0x0@gmail.com"
 							className={styles.socialMediaLink}
 							target="_blank">
-							<h3>
+							<h3 className={styles.navTextModal}>
 								E-mail
 							</h3>
 							<Image
