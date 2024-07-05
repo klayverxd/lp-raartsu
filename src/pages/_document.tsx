@@ -21,6 +21,9 @@ export default function Document() {
         <meta property="og:video:height" content="720" />
         <meta property="og:audio" content="https://www.seusite.com/audio.mp3" />
         <meta property="og:audio:type" content="audio/mpeg" /> */}
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:site" content="@klayverxdx" />
       </Head>
       <body>
         <Main />
