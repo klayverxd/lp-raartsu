@@ -6,7 +6,7 @@
   Landing Page Raartsu 🍌
 </h3>
 
-<p align="center">Aplicação web para encomendas de artes</p>
+<p align="center">Aplicação web para encomendas de artes.</p>
 
 <p align="center">
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/klayverxd/lp-raartsu?color=%237844e9">
